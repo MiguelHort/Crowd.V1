@@ -4,6 +4,7 @@
     font-size: 60px;
     margin-left: 5%;
 }
+
 .conteudo {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
@@ -64,6 +65,7 @@
 
 .pai{
     display: flex;
+    margin-left: 3%;
 }
 
 #picture__input {
@@ -108,4 +110,58 @@
   .picture__img {
     max-width: 100%;
   }
-  
+ .informações{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  color: #000000;
+  margin-left: 6%;
+ }
+ .telefone{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+ .numeros {
+  border-radius: 5px;
+  border-width: 3px;
+  margin-left: 5%;
+  height: 40px;
+  width: 180px;
+}
+.seuemail{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+ .email {
+  margin-top: -5%;
+  border-radius: 5px;
+  border-width: 3px;
+  margin-left: 5%;
+  height: 40px;
+  width: 180px;
+}
+.seusite{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+ .site {
+  margin-top: -5%;
+  border-radius: 5px;
+  border-width: 3px;
+  margin-left: 5%;
+  height: 40px;
+  width: 180px;
+}
+.enviar{
+ border-radius: 10px;
+
+}
