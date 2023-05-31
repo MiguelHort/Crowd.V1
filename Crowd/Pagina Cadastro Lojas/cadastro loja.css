@@ -1,0 +1,111 @@
+.titulo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    margin-left: 5%;
+}
+.conteudo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #FBBC05;
+    margin-left: 5%;
+}
+.nomedonegocio {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.nomengc {
+    border-radius: 5px;
+    border-width: 3px;
+    margin-left: 5%;
+    height: 40px;
+    width: 180px;
+}
+
+.descricaoestab{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.descricao {
+    border-radius: 5px;
+    border-width: 3px;
+    margin-left: 5%;
+    height: 150px;
+    width: 380px;
+}
+.seucep{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.cep {
+    border-radius: 5px;
+    border-width: 3px;
+    margin-left: 5%;
+    height: 40px;
+    width: 180px;
+}
+.imagem{
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.pai{
+    display: flex;
+}
+
+#picture__input {
+    display: none;
+  }
+  
+  .picture {
+    width: 400px;
+    height: 250px;
+    margin-left: 15%;
+    aspect-ratio: 16/9;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  .picture:hover {
+    color: #777;
+    background: #ccc;
+  }
+  
+  .picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+  }
+  
+  .picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .picture__img {
+    max-width: 100%;
+  }
+  

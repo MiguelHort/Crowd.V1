@@ -1,0 +1,23 @@
+.paifotos {
+  display: flex;
+  width: 10%;
+
+}
+
+.foto1 {
+  
+}
+
+.foto2 {
+  display: flex;
+  flex-direction: column;
+ 
+
+
+}
+
+.segundas {
+  clip-path: polygon(0 31%, 100% 31%, 100% 74%, 0 75%);
+
+}
+
