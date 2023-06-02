@@ -144,7 +144,7 @@
   border-width: 3px;
   margin-left: 5%;
   height: 40px;
-  width: 180px;
+  width: 280px;
 }
 .seusite{
   font-family: 'Inter', sans-serif;
@@ -162,6 +162,14 @@
   width: 180px;
 }
 .enviar{
- border-radius: 10px;
-
+  font-family: 'Inter', sans-serif;
+ border-radius: 20px;
+ background-color: #FBBC05;
+ width: 25%;
+ height: 45px; 
+ margin-top: 3%;
+ margin-left: 5%;
+ cursor: pointer;
+ font-size: 17px;
+ font-family: 'Inter', sans-serif;
 }
