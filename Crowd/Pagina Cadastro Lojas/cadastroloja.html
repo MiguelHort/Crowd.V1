@@ -10,6 +10,7 @@
   
 </head>
 
+
 <body>
 
   <h1 class="titulo">O seu negócio e a <br> Crowd juntos!</h1>
@@ -31,19 +32,38 @@
           <form action="login.php" method="post">
             <input class="cep" type="text" required>
 
+            <p class="informações">Informações de contato</p>
+          
+            <p class="telefone">Telefone</p>
+          <form action="login.php" method="post">
+            <input class="numeros" type="tel" 
+            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+            required>
 
+            <p class="seuemail">E-mail</p>
+          <form action="login.php" method="post">
+            <input class="email" type="email" required>
+
+            <p class="seusite">Seu site</p>
+            <form action="login.php" method="post">
+              <input class="site" type="url" 
+              placeholder="https://examplo.com.br"
+              pattern="https://." size="30">
     </div>
     
         <label class="picture" for="picture__input" tabIndex="0">
           <span class="picture__image"></span>
         </label>
-        
+        <p class="adicione">Adicione as melhores fotos do seu negócio</p>
         <input type="file" name="picture__input" id="picture__input">
 
       </form>
     </div>
   </div>
+ 
 
+  <button class="enviar">Cadastrar minha loja</button>
+  
   <script src="imagem.js"></script>
 
 </body>
