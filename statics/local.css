@@ -1,7 +1,9 @@
 .galeria {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  width: 80%;
+  margin: auto;
+  grid-template-columns: repeat(8, 2fr);
+  grid-template-rows: repeat(6, 4vw);
   grid-gap: 15px;
 }
 
@@ -9,33 +11,34 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
  
 .imagem1 {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: 7;
 }
 
 .imagem2 {
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 9;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 .imagem3 {
   grid-column-start: 5;
   grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 7;
 }
 
 #pai {
   display: flex;
   margin-top: 40px; 
   justify-content: center;
-  gap: 100px;
+  gap: 200px;
 }
 
 #divesquerda {
@@ -101,6 +104,7 @@
   display: inline-block;
   font-size: 30px;
   cursor: pointer;
+  color: #FBBC05;
 }
 
 .stars::before {
