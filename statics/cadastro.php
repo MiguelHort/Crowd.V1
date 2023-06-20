@@ -1,22 +1,22 @@
 <?php
 session_start();
-include("conexao.php")
+include("conexao.php");
 
-$name = mysqli_real_escape_string($conexao, trim($_POST['name']));
-$email = mysqli_real_escape_string($conexao, trim($_POST['email']));
-$password = mysqli_real_escape_string($conexao, trim(md5($_POST['password'])));
+$user_name = mysqli_real_escape_string($conexao, trim($_POST['name']));
+$user_email = mysqli_real_escape_string($conexao, trim($_POST['email']));
+$user_password = mysqli_real_escape_string($conexao, trim(md5($_POST['password'])));
 
-$sql = "select count(*) as total from usuario where usuario = '$usuarios'";
+$sql = "select count(*) as total from usuarios where email = '$user_email'";
 $result = mysqli_query($conexao, $sql);
 $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1) {
 	$_SESSION['usuario_existe'] = true;
-	header('Location: cadastro.php');
+	header('Location: index.html');
 	exit;
 }
 
-$sql = "INSERT INTO usuarios (name, email, password, data_cadastro) VALUES ('$name', '$email', '$password', NOW())";
+$sql = "INSERT INTO usuarios (name,email,password) VALUES ('$user_name', '$user_email', '$user_password')";
 
 if($conexao->query($sql) === TRUE) {
 	$_SESSION['status_cadastro'] = true;
@@ -24,6 +24,6 @@ if($conexao->query($sql) === TRUE) {
 
 $conexao->close();
 
-header('Location: cadastro.php');
+header('Location: index.html');
 exit;
 ?>
