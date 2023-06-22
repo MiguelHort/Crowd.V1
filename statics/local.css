@@ -1,3 +1,84 @@
+/* Corpo do site */
+body {
+  /* background-color: #121214; */
+  align-items: center;
+}
+
+/* Div suprema */
+.pai {
+  display: flex;
+}
+
+header {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #FBBC05;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.logo {
+  color: black;
+  font-size: 30px;
+  margin-top: 7px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.imagemlogo {
+  width: 40%;
+  height: 60%;
+  margin-top: 9px;
+}
+
+.logocompleto {
+  display: flex;
+  margin-left: 40px;
+}
+
+
+.pesquisa {
+  margin: auto;
+  
+}
+
+input {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  padding-left: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.botaologin {
+  border-radius: 18px;
+  background-color: white;
+  color: black;
+  border: none;
+  width: 80px;
+  height: 35px;
+  align-items: right;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.botaologin:hover {
+  transform: scale(1.05);
+}
+
+.icons {
+  margin-right: 40px;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+}
+
+/* galeria de imagens */
 figure {
   margin: 0%;
 }
@@ -29,12 +110,14 @@ figure {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 4;
+  opacity: 55%;
 }
 .imagem3 {
   grid-column-start: 5;
   grid-column-end: 9;
   grid-row-start: 4;
   grid-row-end: 7;
+  opacity: 55%;
 }
 .imagem4 {
   grid-column-start: 6;
@@ -45,6 +128,9 @@ figure {
   height: 100px;
   margin: auto;
   opacity: 90%;
+}
+.imagem4:hover {
+  transform: scale(1.1);
 }
 
 #pai {
@@ -69,8 +155,23 @@ figure {
   border-radius: 5px;
   border: solid #FBBC05 2px;
   background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
 }
+.maistexto{
+  margin-top: 7%;
+}
+#maispopulares:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.fogo{
+  width: 20px;
+  height: 30px;
 
+}
 #titulo {
   color: black;
   font-family: 'Inter', sans-serif;
@@ -79,7 +180,7 @@ figure {
 
 }
 
-#titulo1 {
+#sobre {
   color: black;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -87,24 +188,33 @@ figure {
   margin-left: 10px;
 
 }
-#titulo2 {
+.avaliacao{
+  display: flex;
+  margin-left: 5%;
+}
+#nota {
   color: #FBBC05;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 70px;
   margin-left: 10px;
-
+  margin-top: 1%;
 }
-#titulo3 {
+#incrivel {
   color: black;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 25px;
   margin-left: 10px;
-  border: solid black 2px;
   width: 90px;
   border-radius: 5px;
-
+  margin-top: 11%;
+}
+#recurso {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 #subtitulo {
@@ -135,8 +245,17 @@ figure {
   height: 1000px;
   margin-left: 10px;
 }
-
-#recurso {
-  color: red;
-  font-size: 30px;
+#avaliacaoForm{
+  margin-top: -45%;
+}
+.enviar{
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.enviar:hover{
+  transform: scale(1.1);
 }

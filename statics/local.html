@@ -2,17 +2,38 @@
 <html lang="pt-br">
 
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hort Company</title>
   <link rel="stylesheet" type="text/css" href="\statics\local.css">
-
 </head>
 
 <body>
+ <!-- Cabeçalho -->
+ <header>
 
+  <div class="logocompleto">
+      <img class="imagemlogo" src="https://i.ibb.co/NrT409Q/logosite1.png">
+      <p class="logo">Crowd</p>
+  </div>
+
+  <!-- Barra de pesquisa -->
+  <div class="pesquisa">
+      <form class="barra" action="/search" method="get">
+          <input type="text" name="q" placeholder="Pra onde hoje?">
+      </form>
+  </div>
+
+  <!-- Icones -->
+  <div class="icons">
+      <a href="/statics/login.html"><span class="material-symbols-outlined">favorite</span></button></a>
+      <a href="/statics/login.html"><span class="material-symbols-outlined">notifications</span></a>
+      <a href="/statics/login.html"><button class="botaologin">Login</button></a>
+  </div>
+
+</header>
+<br>
 <div class="galeria">
 
   <figure class="imagem1">
@@ -36,14 +57,16 @@
 
     <div id="pai">
       <div id="divesquerda">
-        <button id="maispopulares">Mais populares</button>
+        <button id="maispopulares"><p class="maistexto">Mais populares</p><img class="fogo" src="/statics/fogo_preto.png" alt=""></button>
         <p id="titulo">Alexandria Burguer</p>
         <p id="subtitulo">Primeira hamburgueria de Joinville a trazer a<br>opção de rodízio de hamburguers.</p>
       </div>
       <div id="divdireita">
-        <p id="titulo1">Sobre o estabelicimento</p>
-        <p id="titulo2">5.0</p>
-        <p id="titulo3">Incrível</p>
+        <p id="sobre">Sobre o estabelicimento</p>
+      <div class="avaliacao">       
+        <p id="nota">5.0</p>
+        <p id="incrivel">(Incrível)</p>
+      </div> 
         <ul> <p id="recurso">Recursos</p>
           <li>Internet gratuita</li>
           <li>Lanches e porções</li>
@@ -56,13 +79,14 @@
       <div id="divesquerda">
          
         
-        <h1>Avaliação do Local</h1>
     
     <form id="avaliacaoForm">
+      <h1>Avaliação do Local</h1>
         <div>
             <label for="texto">Comentário:</label><br>
             <textarea id="texto" rows="4" cols="50"></textarea>
         </div>
+        <br>
         <div>
             <label for="estrelas">Classificação:</label><br>
             <span class="stars" onclick="selecionarEstrelas(1)"></span>
@@ -72,8 +96,9 @@
             <span class="stars" onclick="selecionarEstrelas(5)"></span>
             <input type="hidden" name="estrelas" id="estrelas" value="0">
         </div>
+        <br>
         <div>
-            <button type="submit">Enviar Avaliação</button>
+            <button class="enviar" type="submit">Enviar Avaliação</button>
         </div>
     </form>
         
