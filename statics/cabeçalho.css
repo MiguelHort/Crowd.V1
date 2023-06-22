@@ -1,6 +1,6 @@
 /* Corpo do site */
 body {
-    background-color: #121214;
+    /* background-color: #121214; */
     align-items: center;
 }
 
@@ -28,7 +28,7 @@ header {
 }
 
 .imagemlogo {
-    width: 40%;
+    width: 100%;
     height: 60%;
     margin-top: 9px;
 }
@@ -73,8 +73,22 @@ header {
 
   .icons {
     margin-right: 40px;
-    justify-items: center;
-    align-items: center;
-    align-self: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
   }
 
+  .sino{
+    width: 35px;
+    height: 35px;
+  }
+  .sino:hover{
+    transform: scale(1.05);
+  }
+  .coracao{
+    width: 35px;
+    height: 35px;
+  }
+  .coracao:hover{
+    transform: scale(1.05);
+  }

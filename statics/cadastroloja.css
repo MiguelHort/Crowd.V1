@@ -71,7 +71,10 @@ input {
   align-items: center;
   align-self: center;
 }
-
+.sino{
+  width: 30px;
+  height: 30px;
+}
 .titulo {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
