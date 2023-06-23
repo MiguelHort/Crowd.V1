@@ -10,46 +10,46 @@
 </head>
 
 <body>
- <!-- Cabeçalho -->
- <header>
+  <!-- Cabeçalho -->
+  <header>
 
-  <div class="logocompleto">
+    <div class="logocompleto">
       <img class="imagemlogo" src="https://i.ibb.co/NrT409Q/logosite1.png">
       <p class="logo">Crowd</p>
-  </div>
+    </div>
 
-  <!-- Barra de pesquisa -->
-  <div class="pesquisa">
+    <!-- Barra de pesquisa -->
+    <div class="pesquisa">
       <form class="barra" action="/search" method="get">
-          <input type="text" name="q" placeholder="Pra onde hoje?">
+        <input type="text" name="q" placeholder="Pra onde hoje?">
       </form>
-  </div>
+    </div>
 
-  <!-- Icones -->
-  <div class="icons">
+    <!-- Icones -->
+    <div class="icons">
       <a href="/statics/login.html"><span class="material-symbols-outlined">favorite</span></button></a>
       <a href="/statics/login.html"><span class="material-symbols-outlined">notifications</span></a>
       <a href="/statics/login.html"><button class="botaologin">Login</button></a>
+    </div>
+
+  </header>
+  <br>
+  <div class="galeria">
+
+    <figure class="imagem1">
+      <img src="/statics/Fotos/Alexandria/20220528_114722.jpg" class="gallery__img" alt="Image 1">
+    </figure>
+    <figure class="imagem2">
+      <img src="/statics/Fotos/Alexandria/IMG_8743-Editar-Editar.jpg" class="gallery__img" alt="Image 2">
+    </figure>
+    <figure class="imagem3">
+      <img src="/statics/Fotos/Alexandria/2022-05-29.jpg" class="gallery__img" alt="Image 3">
+    </figure>
+    <figure class="imagem4">
+      <a href="/statics/imagens.html"><img src="mais.png" class="gallery__img" alt="Image 4"></a>
+    </figure>
+
   </div>
-
-</header>
-<br>
-<div class="galeria">
-
-  <figure class="imagem1">
-    <img src="/statics/Fotos/Alexandria/20220528_114722.jpg" class="gallery__img" alt="Image 1">
-  </figure>
-  <figure class="imagem2">
-    <img src="/statics/Fotos/Alexandria/IMG_8743-Editar-Editar.jpg" class="gallery__img" alt="Image 2">
-  </figure>
-  <figure class="imagem3">
-    <img src="/statics/Fotos/Alexandria/2022-05-29.jpg" class="gallery__img" alt="Image 3">
-  </figure>
-  <figure class="imagem4">
-    <a href="/statics/imagens.html"><img src="mais.png" class="gallery__img" alt="Image 4"></a>
-  </figure>
-  
-</div>
 
 
 
@@ -57,17 +57,20 @@
 
     <div id="pai">
       <div id="divesquerda">
-        <button id="maispopulares"><p class="maistexto">Mais populares</p><img class="fogo" src="/statics/fogo_preto.png" alt=""></button>
+        <button id="maispopulares">
+          <p class="maistexto">Mais populares</p><img class="fogo" src="/statics/fogo_preto.png" alt="">
+        </button>
         <p id="titulo">Alexandria Burguer</p>
         <p id="subtitulo">Primeira hamburgueria de Joinville a trazer a<br>opção de rodízio de hamburguers.</p>
       </div>
       <div id="divdireita">
         <p id="sobre">Sobre o estabelicimento</p>
-      <div class="avaliacao">       
-        <p id="nota">5.0</p>
-        <p id="incrivel">(Incrível)</p>
-      </div> 
-        <ul> <p id="recurso">Recursos</p>
+        <div class="avaliacao">
+          <p id="nota">5.0</p>
+          <p id="incrivel">(Incrível)</p>
+        </div>
+        <ul>
+          <p id="recurso">Recursos</p>
           <li>Internet gratuita</li>
           <li>Lanches e porções</li>
           <li>Estacionamento gratís</li>
@@ -77,31 +80,32 @@
 
     <div id="pai">
       <div id="divesquerda">
-         
-        
-    
-    <form id="avaliacaoForm">
-      <h1>Avaliação do Local</h1>
-        <div>
+
+
+
+        <form action="local.php" id="avaliacaoForm" method="post">
+          <h1>Avaliação do Local</h1>
+
+          <div>
             <label for="texto">Comentário:</label><br>
-            <textarea id="texto" rows="4" cols="50"></textarea>
-        </div>
-        <br>
-        <div>
+            <textarea id="texto" name="comments" rows="4" cols="50"></textarea>
+          </div>
+          <br>
+          <div>
             <label for="estrelas">Classificação:</label><br>
             <span class="stars" onclick="selecionarEstrelas(1)"></span>
             <span class="stars" onclick="selecionarEstrelas(2)"></span>
             <span class="stars" onclick="selecionarEstrelas(3)"></span>
             <span class="stars" onclick="selecionarEstrelas(4)"></span>
             <span class="stars" onclick="selecionarEstrelas(5)"></span>
-            <input type="hidden" name="estrelas" id="estrelas" value="0">
-        </div>
-        <br>
-        <div>
+            <input type="hidden" name="stars" id="estrelas" value="0">
+          </div>
+          <br>
+          <div>
             <button class="enviar" type="submit">Enviar Avaliação</button>
-        </div>
-    </form>
-        
+          </div>
+        </form>
+
       </div>
       <div id="divdireita1">
         <p id="titulo1">Anuncios Google Ads</p>
