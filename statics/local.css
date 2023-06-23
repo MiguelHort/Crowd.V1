@@ -238,6 +238,7 @@ figure {
   content: '\2605';
 }
 
+
 #divdireita1{
   border-radius: 5px;
   background-color: lightgray;
@@ -253,8 +254,9 @@ figure {
   color: white;
   width: 150px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
+  border: none;
 }
 .enviar:hover{
   transform: scale(1.1);

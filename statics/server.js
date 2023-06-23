@@ -11,18 +11,18 @@ function selecionarEstrelas(valor) {
         }
     });
     
-    estrelasInput.value = valor;
+    // estrelasInput.value = valor;
 }
 
 document.getElementById('avaliacaoForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    const texto = document.getElementById('texto').value;
-    const estrelas = parseInt(estrelasInput.value);
+    // const texto = document.getElementById('texto').value;
+    // const estrelas = parseInt(estrelasInput.value);
     
-    // Aqui você pode enviar a avaliação para o servidor ou realizar qualquer ação desejada
-    console.log('Texto:', texto);
-    console.log('Estrelas:', estrelas);
+    // // Aqui você pode enviar a avaliação para o servidor ou realizar qualquer ação desejada
+    // console.log('Texto:', texto);
+    // console.log('Estrelas:', estrelas);
     
     // Limpar o formulário após o envio
     document.getElementById('avaliacaoForm').reset();
