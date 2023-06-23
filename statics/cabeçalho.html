@@ -28,7 +28,37 @@
 
         <!-- Icones -->
         <div class="icons">
-            <a href=""><img class="sino" src="/statics/sino.png" alt=""></a>
+            <img class="sino" src="/statics/sino.png" alt="Imagem" onclick="alternarPopup()" />
+
+            <!-- Pop-up -->
+            <div id="popup" class="popup">
+              <h2>Notificações</h2>
+              <div class="section">
+                <p class="textopop">Novo restaurante na sua cidade!</p>
+              </div>
+              <div class="section">
+                <p class="textopop">Seção 2</p>
+              </div>
+              <div class="section">
+                <p class="textopop">Seção 3</p>
+              </div>
+              <div class="section">
+                <p class="textopop">Seção 4</p>
+              </div>
+              <div class="section">
+                <p class="textopop">Seção 5</p>
+              </div>
+            </div>
+          
+            <script>
+              var popup = document.getElementById("popup");
+              var isVisible = false;
+          
+              function alternarPopup() {
+                isVisible = !isVisible;
+                popup.style.display = isVisible ? "block" : "none";
+              }
+            </script>
             <a href=""><img class="coracao" src="/statics/coração preto.png" alt=""></a>
             <a href=""><button class="botaologin">Login</button></a>
         </div>

@@ -16,30 +16,67 @@
 
         <!-- Cabeçalho -->
         <header>
-            <div class="logocompleto">
-                <img class="imagemlogo" src="https://i.ibb.co/NrT409Q/logosite1.png">
-                <p class="logo">Crowd</p>
+          <div class="logocompleto">
+            
+            <a href="/statics/index.html"><img class="imagemlogo" src="https://i.ibb.co/NrT409Q/logosite1.png"></a>
+            <p class="logo">Crowd</p>
+        </div>
+
+        <!-- Barra de pesquisa -->
+        <div class="pesquisa">
+            <form class="barra" action="/search" method="get">
+                <input type="text" name="q" placeholder="Pra onde hoje?">
+            </form>
+        </div>
+
+        <!-- Icones -->
+        <div class="icons">
+            <img class="sino" src="/statics/sino.png" alt="Imagem" onclick="alternarPopup()" />
+
+            <!-- Pop-up -->
+            <div id="popup" class="popup hidden">
+              <h2>Notificações</h2>
+              <div class="section">
+                <p class="textopop">Novo restaurante na sua cidade!</p>
+              </div>
+              <div class="section">
+                <p class="textopop">Nova </p>
+              </div>
+              <div class="section">
+                <p class="textopop">Seção 3</p>
+              </div>
+              <div class="section">
+                <p class="textopop">Seção 4</p>
+              </div>
+              <div class="section">
+                <p class="textopop">Seção 5</p>
+              </div>
             </div>
 
-            <!-- Barra de pesquisa -->
-            <div class="pesquisa">
-                <form class="barra" action="/search" method="get">
-                    <input type="text" name="q" placeholder="Pra onde hoje?">
-                </form>
-            </div>
+          <!-- java script do pop up -->
 
-            <!-- Icones -->
-            <div class="botoestopo">
-                <div class="icons">
-                    <img class="sino" src="https://o.remove.bg/downloads/60de2aac-aed3-4945-b6dc-204256ab59d5/image-removebg-preview.png">
-                  
-                    
-                </div>
-                
-                <a href="/statics/login.html"><button  class="botaologin">Login</button></a>
-                
+            <script>
+            var popup = document.getElementById("popup");
+    var isVisible = false;
 
-            </div>
+    function alternarPopup() {
+      isVisible = !isVisible;
+      if (isVisible) {
+        popup.classList.remove("hidden");
+      } else {
+        popup.classList.add("hidden");
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      popup.classList.add("hidden");
+      isVisible = false;
+    });
+            </script>
+            <a href=""><img class="coracao" src="/statics/coração preto.png" alt=""></a>
+            <a href=""><button class="botaologin">Login</button></a>
+        </div>
+
         </header>
 
         <!-- Botões de categorias -->
