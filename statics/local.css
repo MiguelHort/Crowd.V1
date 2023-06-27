@@ -9,6 +9,7 @@ body {
   display: flex;
 }
 
+/* Cabeçalho */
 header {
   display: flex;
   margin: auto;
@@ -18,42 +19,74 @@ header {
   height: 50px;
   border-radius: 10px;
 }
+ /* pop-up */
+ 
+ .popup {
+  position: fixed;
+  top: 42%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  /* opacity: 100%; */
+  transition: opacity 0.3s ease-out;
 
-.logo {
-  color: black;
-  font-size: 30px;
-  margin-top: 7px;
-  font-family: sans-serif;
-  font-weight: bold;
 }
-
-.imagemlogo {
-  width: 40%;
-  height: 60%;
-  margin-top: 9px;
+.popup.hidden {
+  opacity: 0;
 }
+/* Estilos para as seções do pop-up */
+.section {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 45px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.section:hover {
+  transform: scale(1.05);
+}
+.textopop{
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 14px;
+margin-left: 3%;
+margin-top: 10px;
+}
+/* Ícones */
 
-.logocompleto {
+.botoestopo {
   display: flex;
-  margin-left: 40px;
+ /* margin-left: 60%; */
+ 
 }
 
-
-.pesquisa {
-  margin: auto;
-  
+.icons {
+  margin-right: 40px;
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
 }
 
-input {
-  background-color: whitesmoke;
-  width: 400px;
+.sino{
+  width: 30px;
   height: 30px;
-  border-radius: 15px;
-  border: none;
-  padding-left: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
-
+.sino:hover{
+  transform: scale(1.05);
+}
+.coracao{
+  width: 30px;
+  height: 30px;
+}
+.coracao:hover{
+  transform: scale(1.05);
+}
 
 .botaologin {
   border-radius: 18px;
@@ -65,17 +98,52 @@ input {
   align-items: right;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  
 }
 
 .botaologin:hover {
   transform: scale(1.05);
 }
 
-.icons {
-  margin-right: 40px;
-  justify-items: center;
-  align-items: center;
-  align-self: center;
+
+
+.logo {
+  color: black;
+  font-size: 30px;
+  margin-top: 7px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.imagemlogo {
+  width: 100%;
+  height: 60%;
+  margin-top: 9px;
+}
+
+.logocompleto {
+  display: flex;
+  margin-left: 40px;
+}
+
+/* Barra de pesquisa */
+.pesquisa {
+  margin-right: 25%;
+  margin-top: 1%;
+
+  
+}
+
+input {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  padding-left: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 15%;
+  margin-top: 1 ;
 }
 
 /* galeria de imagens */
