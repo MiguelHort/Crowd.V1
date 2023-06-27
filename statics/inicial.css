@@ -349,6 +349,15 @@ height: 60px;
   position: relative;
   left: 75px;
 }
+.premiados{
+  display: flex;
+  margin-left: 10%;
+}
+.imagepremium{
+  width: 200px;
+  height: 200px;
+  margin-left: 10%;
+}
 
 .melhoresimagens {
   display: flex;
