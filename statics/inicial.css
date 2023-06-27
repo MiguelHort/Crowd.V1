@@ -26,10 +26,10 @@ header {
  
  .popup {
   position: fixed;
-  top: 42%;
-  left: 70%;
+  top: 30%;
+  right: 9%;
   transform: translate(-50%, -50%);
-  width: 250px;
+  width: 300px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -41,24 +41,28 @@ header {
 .popup.hidden {
   opacity: 0;
 }
+
 /* Estilos para as seções do pop-up */
+
 .section {
   margin-bottom: 10px;
-  width: 200px;
-  height: 45px;
+  width: 250px;
+  height: 50px;
   background-color: #f5f5f5;
   border-radius: 10px;
   cursor: pointer;
+  display: flex; /* Define o display como flex */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Alinha horizontalmente ao centro */
 }
 .section:hover {
   transform: scale(1.05);
 }
+
 .textopop{
 font-family: 'Montserrat', sans-serif;
 font-weight: 600;
 font-size: 14px;
-margin-left: 3%;
-margin-top: 10px;
 }
 /* Ícones */
 
@@ -530,6 +534,7 @@ body{
   width: 40%;
   height: 15%;
   border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .cadastroloja:hover {
   transform: scale(1.05);
