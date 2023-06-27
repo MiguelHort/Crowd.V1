@@ -1,8 +1,44 @@
-/* galeria de imagens */
-.galeria {
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin: auto;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#galeria {
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#coluna1 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+#coluna2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+#coluna2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+
+.gallery__img {
+    object-fit: cover;
+    border-radius: 5px;
 }
