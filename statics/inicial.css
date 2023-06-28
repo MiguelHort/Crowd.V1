@@ -349,14 +349,45 @@ height: 60px;
   position: relative;
   left: 75px;
 }
-.premiados{
+ .premiados{
   display: flex;
-  margin-left: 10%;
+  gap: 10px;
+  /* padding: 30px; */
+  /* width: 1000px;
+  height: 50px; */
 }
-.imagepremium{
-  width: 200px;
-  height: 200px;
-  margin-left: 10%;
+
+/* imagens com animação */
+
+.image-container {
+  position: relative;
+  width: 100px; /* Defina a largura desejada para o contêiner */
+  height: 100px; /* Defina a altura desejada para o contêiner */
+  overflow: hidden;
+  display: flex;
+}
+
+.first-image,
+.second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px; 
+  transition: transform 0.5s ease;
+}
+
+.first-image {
+  z-index: 1;
+}
+
+.second-image {
+  z-index: 2;
+  transform: translateX(100%);
+}
+
+.image-container:hover .second-image {
+  transform: translateX(0);
 }
 
 .melhoresimagens {
@@ -452,6 +483,7 @@ body{
   border-radius: 10px;
   width: 90%;
   margin-left: 5%;
+  margin-top: 5%;
 }
 
 .card-grid{
