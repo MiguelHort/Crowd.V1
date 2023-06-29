@@ -351,51 +351,74 @@ height: 60px;
 }
  .premiados{
   display: flex;
-  gap: 10px;
-  /* padding: 30px; */
-  /* width: 1000px;
-  height: 50px; */
+  /* gap: 10px; */
 }
 
 /* imagens com animação */
+  .image-container {
+    position: relative;
+    left: 75px;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 1%;
+  }
 
-.image-container {
-  position: relative;
-  width: 100px; /* Defina a largura desejada para o contêiner */
-  height: 100px; /* Defina a altura desejada para o contêiner */
-  overflow: hidden;
-  display: flex;
-}
+  .image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    pointer-events: none;
+  }
 
-.first-image,
-.second-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px; 
-  transition: transform 0.5s ease;
-}
-
-.first-image {
-  z-index: 1;
-}
-
+  /* Estilos CSS para a animação */
+  .image-container.hover img:nth-child(2) {
+    transform: translateX(-100%);
+    pointer-events: auto;
+  }
 .second-image {
   z-index: 2;
   transform: translateX(100%);
+  object-fit: cover;
 }
 
 .image-container:hover .second-image {
   transform: translateX(0);
 }
-
+/* legenda das imagens */
+.nomelugares{
+  display: flex;
+  gap: 60px;
+}
+.nomelugar{
+  color: #fff;
+  margin-top: 1%;
+  margin-left: 7%;
+}
+.nomelugar2{
+  color: #fff;
+  margin-top: 1%;
+  margin-left: 7%;
+}
+.nomelugar3{
+  color: #fff;
+  margin-top: 1%;
+  margin-left: 12%;
+}
+.nomelugar4{
+  color: #fff;
+  margin-top: 1%;
+  margin-left: 12%;
+}
 .melhoresimagens {
   display: flex;
   width:90%;
   margin: auto;
   justify-content: space-between;
   margin-top: 30px;
+
 }
 
 .imagemtop {

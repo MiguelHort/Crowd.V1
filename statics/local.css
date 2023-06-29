@@ -7,6 +7,8 @@ body {
 /* Div suprema */
 .pai {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Cabeçalho */
@@ -31,7 +33,7 @@ header {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  /* opacity: 100%; */
+  opacity: 1;
   transition: opacity 0.3s ease-out;
 
 }

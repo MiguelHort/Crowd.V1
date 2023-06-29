@@ -110,49 +110,24 @@
 
     <!-- lugares premiados -->
 <div class="premiados">
-  <style>
-    /* Estilos CSS para as imagens */
-    .image-container {
-      position: relative;
-      width: 400px;
-      height: 400px;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .image-container img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.5s;
-      pointer-events: none;
-    }
-
-    /* Estilos CSS para a animação */
-    .image-container.hover img:nth-child(2) {
-      transform: translateX(-100%);
-      pointer-events: auto;
-    }
-  </style>
-</head>
-<body>
-  <div class="image-container">
+<a href="/statics/local.html"> <div class="image-container">
     <img class="first-image" src="alexanpremium.png" alt="Primeira Imagem">
-    <img class="second-image" src="unapremium.png" alt="Segunda Imagem">
+    <img class="second-image" src="/statics/Fotos/Alexandria/IMG_8764-.jpg" alt="Segunda Imagem">
   </div>
+</a>
   <div class="image-container">
-    <img class="first-image" src="papapremium.png" alt="Terceira Imagem">
-    <img class="second-image" src="unapremium.png" alt="Quarta Imagem">
+    <img class="first-image" src="unapremium.png" alt="Terceira Imagem">
+    <img class="second-image" src="unalome.png" alt="Quarta Imagem">
   </div>
+
   <div class="image-container">
-    <img class="first-image" src="alexanpremium.png" alt="Quinta Imagem">
-    <img class="second-image" src="unapremium.png" alt="Sexta Imagem">
+    <img class="first-image" src="papapremium.png" alt="Quinta Imagem">
+    <img class="second-image" src="buffet papa.png" alt="Sexta Imagem">
   </div>
+
   <div class="image-container">
-    <img class="first-image" src="papapremium.png" alt="Sétima Imagem">
-    <img class="second-image" src="unapremium.png" alt="Oitava Imagem">
+    <img class="first-image" src="levelpremium.png" alt="Sétima Imagem">
+    <img class="second-image" src="level comida.png" alt="Oitava Imagem">
   </div>
   <script>
   
@@ -173,10 +148,14 @@
 container2.addEventListener('mouseleave', () => {
   secondImage2.style.transform = 'translateX(100%)';
 });
-    
     </script>
     </div>
-
+    <div class="nomelugares">
+    <p class="nomelugar">Alexandria Burguer</p>
+    <p class="nomelugar2">Unalome</p>
+    <p class="nomelugar3">Papadelli</p>
+    <p class="nomelugar4">Level Café</p>
+  </div>
     <!-- categorias -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
