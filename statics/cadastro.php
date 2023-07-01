@@ -20,10 +20,11 @@ $sql = "INSERT INTO usuarios (name,email,password) VALUES ('$user_name', '$user_
 
 if($conexao->query($sql) === TRUE) {
 	$_SESSION['status_cadastro'] = true;
+	$conexao->close();
+
+	header('Location: index.html');
 }
 
-$conexao->close();
 
-header('Location: index.html');
 exit;
 ?>

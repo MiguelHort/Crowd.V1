@@ -15,76 +15,73 @@
   <header>
 
     <div class="logocompleto">
-        <img class="imagemlogo" src="https://i.ibb.co/NrT409Q/logosite1.png">
-        <p class="logo">Crowd</p>
+      <img class="imagemlogo" src="https://i.ibb.co/NrT409Q/logosite1.png">
+      <p class="logo">Crowd</p>
     </div>
 
     <!-- Barra de pesquisa -->
     <div class="pesquisa">
-        <form class="barra" action="/search" method="get">
-            <input type="text" name="q" placeholder="Pra onde hoje?">
-        </form>
+      <form class="barra" action="/search" method="get">
+        <input class="barradepesquisa" type="text" name="q" placeholder="Pra onde hoje?">
+      </form>
     </div>
 
     <!-- Icones -->
     <div class="icons">
-        <a href="/statics/"><span class="material-symbols-outlined"></span></button></a>
-        <a href="/statics/"><span class="material-symbols-outlined"></span></a>
-        <a href="/statics/"><button class="botaologin">Login</button></a>
+      <a href="/statics/"><span class="material-symbols-outlined"></span></button></a>
+      <a href="/statics/"><span class="material-symbols-outlined"></span></a>
+      <a href="/statics/"><button class="botaologin">Login</button></a>
     </div>
-</header>
+
+  </header>
+
+
 
   <h1 class="titulo">O seu negócio e a <br> Crowd juntos!</h1>
 
   <p class="conteudo">Preencha as informações com <br> tudo que você quer que saibam <br> sobre o seu negócio.</p>
+  <form action="cadastroloja.php" method="POST">
 
-  <div class="pai">
-    <div class="form">
-      <p class="nomedonegocio">Nome do negócio</p>
+    <div class="pai">
+      <div class="form">
 
-      <form action="login.php" method="post">
-        <input class="nomengc" type="email" required>
+        <p class="nomedonegocio">Nome do negócio</p>
+        <input class="nomengc" name="nomengc" type="text" required>
 
         <p class="descricaoestab">Descrição do seu estabelecimento</p>
-        <form action="login.php" method="post">
-          <input class="descricao" type="text" name="descricao" required>
+        <textarea name="descricao" class="descricao" cols="30" rows="10"></textarea>
 
-          <p class="seucep">Seu CEP</p>
-          <form action="login.php" method="post">
-            <input class="cep" type="text" required>
 
-            <p class="informações">Informações de contato</p>
-          
-            <p class="telefone">Telefone</p>
-          <form action="login.php" method="post">
-            <input class="numeros" type="tel" 
-            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
-            required>
+        <p class="seucep">Seu CEP</p>
+        <input class="cep" type="text" name="cep" required>
 
-            <p class="seuemail">E-mail</p>
-          <form action="login.php" method="post">
-            <input class="email" type="email" required>
+        <p class="informações">Informações de contato</p>
 
-            <p class="seusite">Seu site</p>
-            <form action="login.php" method="post">
-              <input class="site" type="url" 
-              placeholder="https://examplo.com.br"
-              pattern="https://." size="30">
+        <p class="telefone">Telefone</p>
+        <input class="numeros" name="telefone" type="tel" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
+
+        <p class="seuemail">E-mail</p>
+        <input class="email" type="email" name="email" required>
+
+        <p class="seusite">Seu site</p>
+        <input class="site" type="url" name="site" placeholder="https://examplo.com.br" >
+
+      </div>
+
+      <div class="addimagem">
+      <p class="adicione">Adicione as melhores fotos do seu negócio</p>
+      <input type="file" name="picture__input" id="picture__input">
+      <label class="picture" for="picture__input" tabIndex="0">
+        <span class="picture__image"></span>
+      </label>
+      
     </div>
-    
-        <label class="picture" for="picture__input" tabIndex="0">
-          <span class="picture__image"></span>
-        </label>
-        <p class="adicione">Adicione as melhores fotos do seu negócio</p>
-        <input type="file" name="picture__input" id="picture__input">
-
-      </form>
     </div>
-  </div>
- 
 
-  <button class="enviar">Cadastrar minha loja</button>
-  
+    <button type="submit" name="submit" class="enviar">Cadastrar</button>
+
+  </form>
+
   <script src="cadastroloja.js"></script>
 
 </body>

@@ -1,6 +1,7 @@
 /* Div suprema */
 .pai {
   display: flex;
+  gap: 200px;
 }
 
 header {
@@ -38,7 +39,8 @@ header {
   
 }
 
-input {
+
+.barradepesquisa {
   background-color: whitesmoke;
   width: 400px;
   height: 30px;
@@ -103,6 +105,8 @@ input {
     margin-left: 5%;
     height: 40px;
     width: 180px;
+    background-color: whitesmoke;
+    border: solid 2px #777;
 }
 
 .descricaoestab{
@@ -118,6 +122,8 @@ input {
     margin-left: 5%;
     height: 150px;
     width: 380px;
+    background-color: whitesmoke;
+    border: solid 2px #777;
 }
 .seucep{
     font-family: 'Inter', sans-serif;
@@ -132,6 +138,8 @@ input {
     margin-left: 5%;
     height: 40px;
     width: 180px;
+    background-color: whitesmoke;
+    border: solid 2px #777;
 }
 .imagem{
     
@@ -146,6 +154,13 @@ input {
     margin-left: 3%;
 }
 
+.adicione {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
 #picture__input {
     display: none;
   }
@@ -153,7 +168,6 @@ input {
   .picture {
     width: 400px;
     height: 250px;
-    margin-left: 15%;
     aspect-ratio: 16/9;
     background: #ddd;
     display: flex;
@@ -188,6 +202,12 @@ input {
   .picture__img {
     max-width: 100%;
   }
+
+  .addimagem {
+    display: flex;
+    flex-direction: column;
+  }
+
  .informações{
   font-family: 'Inter', sans-serif;
   font-weight: 800;
@@ -208,6 +228,8 @@ input {
   margin-left: 5%;
   height: 40px;
   width: 180px;
+  background-color: whitesmoke;
+    border: solid 2px #777;
 }
 .seuemail{
   font-family: 'Inter', sans-serif;
@@ -223,6 +245,8 @@ input {
   margin-left: 5%;
   height: 40px;
   width: 280px;
+  background-color: whitesmoke;
+    border: solid 2px #777;
 }
 .seusite{
   font-family: 'Inter', sans-serif;
@@ -238,6 +262,8 @@ input {
   margin-left: 5%;
   height: 40px;
   width: 180px;
+  background-color: whitesmoke;
+    border: solid 2px #777;
 }
 .enviar{
   font-family: 'Inter', sans-serif;

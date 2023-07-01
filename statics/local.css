@@ -15,7 +15,7 @@ body {
 header {
   display: flex;
   margin: auto;
-  margin-top: 1%;
+  margin-top: 20px;
   background-color: #FBBC05;
   width: 90%;
   height: 50px;
@@ -68,7 +68,7 @@ margin-top: 10px;
 }
 
 .icons {
-  margin-right: 20%;
+  margin-right: 40px;
   display: flex;
   gap: 15px;
   margin-top: 8px;
@@ -211,7 +211,7 @@ figure {
 }
 
 #divesquerda {
-  /* display: flex; */
+
 }
 
 #divdireita{
@@ -330,59 +330,4 @@ figure {
 }
 .enviar:hover{
   transform: scale(1.1);
-}
-/* mapa da localização */
-
-#map-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid #000;
-}
-
-
-
-#map {
-  width: 100%;
-  height: 100%; 
-  transform: translate(-50%, -50%);
-  width: 550px;
-  height: 550px;
-  margin-left: 50%;
-  margin-top: 25%;
-  border: 2px solid #000;
-}
-
-.close-button {
-  position: absolute;
-  top: 1px;
-  right: 10px;
-  font-size: 50px;
-  cursor: pointer;
-  z-index: 10000;
-  font-weight: 1000;
-  color: rgb(255, 255, 255);
-  margin-right: 1%;
-}
-
-#open-map-button {
-  cursor: pointer;
-  background-color: #FBBC05;
-  border: none;
-  border-radius: 15px;
-  width: 120px;
-  height: 35px;
-  font-weight: 700
-}
-#open-map-button:hover{
-  transform: scale(1.1);
-}
-.botoes{
-  display: flex;
-  gap: 130px;
 }
