@@ -101,19 +101,24 @@ isVisible = false;
 
     <div id="pai">
       <div id="divesquerda">
+         <div class="botoes">
         <button id="maispopulares">
-          <!-- <div class="botoes"> -->
+          
+         
+          
           <p class="maistexto">Mais populares</p><img class="fogo" src="/statics/fogo_preto.png" alt="">
         </button>
-        
+
         <!-- visualizar mapa -->
         
-         <button id="open-map-button">Abrir Mapa</button>
+         <button id="open-map-button">Ver localização</button>
+     </div>
+
     <div id="map-container">
         <div id="map"></div>
         <span class="close-button" onclick="closeMap()">&times;</span>
     </div>
-
+    <!-- java do mapa -->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
         <script>
             var openMapButton = document.getElementById('open-map-button');
@@ -131,15 +136,15 @@ isVisible = false;
                         maxZoom: 18,
                     }).addTo(map);
     
-                    L.marker([-26.3045, -48.8487]).addTo(map)
-                        .bindPopup('Aqui está Joinville!')
+                    L.marker([-26.302460744973665, -48.849228339121765]).addTo(map)
+                        .bindPopup('Alexandria Burguer')
                         .openPopup();
                 }
             });
-    
             function closeMap() {
                 mapContainer.style.display = 'none';
             }
+            
         </script>
 
         <p id="titulo">Alexandria Burguer</p>
