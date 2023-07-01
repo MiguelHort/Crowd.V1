@@ -351,7 +351,7 @@ height: 60px;
 }
  .premiados{
   display: flex;
-  /* gap: 10px; */
+
 }
 
 /* imagens com animação */
@@ -391,11 +391,12 @@ height: 60px;
 .nomelugares{
   display: flex;
   gap: 60px;
+  margin-right: 2%;
 }
 .nomelugar{
   color: #fff;
   margin-top: 1%;
-  margin-left: 7%;
+  margin-left: 6%;
 }
 .nomelugar2{
   color: #fff;
@@ -405,7 +406,7 @@ height: 60px;
 .nomelugar3{
   color: #fff;
   margin-top: 1%;
-  margin-left: 12%;
+  margin-left: 162px;
 }
 .nomelugar4{
   color: #fff;
