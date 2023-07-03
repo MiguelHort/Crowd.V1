@@ -15,11 +15,11 @@ if ($count == 1) {
     $_SESSION['usuario_id'] = $row['id']; // Salvar o ID do usuário na sessão, se necessário
     $_SESSION['usuario_nome'] = $row['name']; // Salvar o nome do usuário na sessão, se necessário
 
-    header('Location: indexld.html'); // Redirecionar para a página do painel do usuário
+    header('Location: onlogin.html'); // Redirecionar para a página do painel do usuário
     exit;
 } else {
     $_SESSION['login_invalido'] = true; // Credenciais inválidas
-    header('Location: login.html'); // Redirecionar de volta para a página de login
+    header('Location: offlogin.html'); // Redirecionar de volta para a página de login
     exit;
 }
 
