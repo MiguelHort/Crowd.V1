@@ -18,5 +18,5 @@ if (isset($_POST['submit']) && isset($_FILES['picture__input'])) {
         $sql = mysqli_prepare($conexao, "INSERT INTO novolocal (nomengc, descricao, cep, telefone, email, site, caminhoimagem) VALUES ('$user_nomengc', '$user_descricao', '$user_cep', '$user_telefone', '$user_email', '$user_site', '$caminhocompleto')");
         $executar = mysqli_stmt_execute($sql);
     }
-
+}
 ?>
