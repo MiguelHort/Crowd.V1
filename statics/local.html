@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hort Company</title>
+  <title>Alexandria</title>
   <link rel="stylesheet" type="text/css" href="\statics\local.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
+
 
 <body>
   <div class="pai">
@@ -100,9 +102,57 @@ isVisible = false;
 
     <div id="pai">
       <div id="divesquerda">
+         <div class="botoes">
         <button id="maispopulares">
+          <!-- <div class="botoes"> -->
+
+
+
           <p class="maistexto">Mais populares</p><img class="fogo" src="/statics/fogo_preto.png" alt="">
         </button>
+        
+
+        <!-- visualizar mapa -->
+
+         <button id="open-map-button">Ver localização</button>
+     </div>
+
+    <div id="map-container">
+        <div id="map"></div>
+        <span class="close-button" onclick="closeMap()">&times;</span>
+    </div>
+
+    <!-- java do mapa -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script>
+            var openMapButton = document.getElementById('open-map-button');
+            var mapContainer = document.getElementById('map-container');
+            var map;
+    
+            openMapButton.addEventListener('click', function() {
+                mapContainer.style.display = 'block';
+    
+                if (!map) {
+                    map = L.map('map').setView([-26.3045, -48.8487], 13);
+    
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+                        maxZoom: 18,
+                    }).addTo(map);
+
+                    
+                    L.marker([-26.302381225735296, -48.84923808199108]).addTo(map)
+                        .bindPopup('Alexandria Burguer')
+                        .openPopup();
+                }
+            });
+
+            function closeMap() {
+                mapContainer.style.display = 'none';
+            }
+
+        </script>
+
         <p id="titulo">Alexandria Burguer</p>
         <p id="subtitulo">Primeira hamburgueria de Joinville a trazer a<br>opção de rodízio de hamburguers.</p>
       </div>

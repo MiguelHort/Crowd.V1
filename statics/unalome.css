@@ -119,7 +119,7 @@ body {
   /* Barra de pesquisa */
   .pesquisa {
     margin-right: 25%;
-    margin-top: 1%;
+    margin-top: 10px;
     
   }
   input {
@@ -131,7 +131,7 @@ body {
     padding-left: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-left: 15%;
-    margin-top: 1 ;
+   
   }
   /* galeria de imagens */
   figure {

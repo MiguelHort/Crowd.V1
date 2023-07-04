@@ -134,20 +134,19 @@ font-size: 14px;
 
 /* Barra de pesquisa */
 .pesquisa {
-  margin-right: 25%;
-  margin-top: 1%;
-
-  
+  margin-right: 35%;
+  margin-top: 10px;
 }
 
 input {
   background-color: whitesmoke;
-  width: 400px;
+  /* width: 400px; */
   height: 30px;
   border-radius: 15px;
   border: none;
   padding-left: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 250%;
 }
 
 /* Botôes de categorias */
@@ -173,8 +172,11 @@ input {
   border: 2px solid #FBBC05;
   border-radius: 5px;
   width: 16%;
-  margin-left: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+gap: 30%;
 }
 .botao2 {
   font-size: 15px;
@@ -268,11 +270,8 @@ input {
   text-align: left;
 }
 .textobotao1{
-font-weight: 400;
- position: relative;
- top: -50%;
- right: 25%;
- font-size: 20px;
+  font-weight: 400;
+    font-size: 20px;
 }
 .textobotao2{
   font-weight: 400;
@@ -301,8 +300,8 @@ font-weight: 400;
   .fogoicon{
 width: 40px;
 height: 50px;
-margin-left: 55%;
-margin-top: 10%;
+/* margin-left: 55%;
+margin-top: 10%; */
 }
 .copowhisky{
 width: 40px;
@@ -356,15 +355,15 @@ height: 60px;
 }
  .premiados{
   display: flex;
-  /* gap: 10px; */
+  gap: 120px;
 }
 
 /* imagens com animação */
   .image-container {
     position: relative;
     left: 75px;
-    width: 270px;
-    height: 270px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     cursor: pointer;
     margin-left: 1%;
@@ -396,26 +395,60 @@ height: 60px;
 .nomelugares{
   display: flex;
   gap: 60px;
+  font-size: 20px;
+}
+.texto-sublinhado {
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+.texto-sublinhado:hover {
+  text-decoration: underline;
 }
 .nomelugar{
   color: #fff;
   margin-top: 1%;
-  margin-left: 7%;
+  margin-left: 4%;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+  cursor: pointer;
+}
+.nomelugar:hover {
+  text-decoration: underline;
 }
 .nomelugar2{
   color: #fff;
   margin-top: 1%;
-  margin-left: 7%;
+  margin-left: 10%;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+  cursor: pointer;
+
+}
+.nomelugar2:hover {
+  text-decoration: underline;
 }
 .nomelugar3{
   color: #fff;
   margin-top: 1%;
-  margin-left: 12%;
+  margin-left: 16%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: text-decoration 0.3s;
+}
+.nomelugar3:hover {
+  text-decoration: underline;
 }
 .nomelugar4{
   color: #fff;
   margin-top: 1%;
-  margin-left: 12%;
+  margin-left: 15%;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+  cursor: pointer;
+}
+.nomelugar4:hover {
+  text-decoration: underline; 
 }
 .melhoresimagens {
   display: flex;
@@ -436,7 +469,7 @@ border-radius: 5px;
   margin: auto;
   margin-top: 8%;
   width: 90%;
-  height: 400px;
+  height: 450px;
   border-radius: 10px;
   display: flex;
 }
@@ -450,7 +483,7 @@ border-radius: 5px;
 
 }
 
-
+/*  */
 .Ajudeadar{
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -471,7 +504,24 @@ border-radius: 5px;
 
 .imagempessoas {
   width: 319px;
+  margin-top: 6%;
 }
+.cadastroloja{
+  background-color: #121214;
+  font-size: 15px;
+  color: white;
+  margin-left: 30%;
+  margin-top: 6%;
+  cursor: pointer;
+  width: 40%;
+  height: 15%;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.cadastroloja:hover {
+  transform: scale(1.05);
+}
+
 :root{
   --background-dark: #2d3548;
   --text-light: rgba(255,255,255,0.6);
@@ -592,21 +642,6 @@ body{
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.4;
   word-spacing: 100vw;
-}
-.cadastroloja{
-  background-color: #121214;
-  font-size: 15px;
-  color: white;
-  margin-left: 30%;
-  margin-top: 6%;
-  cursor: pointer;
-  width: 40%;
-  height: 15%;
-  border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.cadastroloja:hover {
-  transform: scale(1.05);
 }
 #rodape {
   width: 100%;

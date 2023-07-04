@@ -1,106 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Menu Lateral</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    .container {
-  display: flex;
-}
+    <title>Botão de Curtir</title>
+    <style>
+        #coracao {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
 
-.menu-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 999;
-}
-
-#sidebar {
-  position: fixed;
-  top: 0;
-  right: -300px; /* Menu inicia escondido */
-  width: 300px;
-  height: 100vh;
-  background-color: #f1f1f1;
-  transition: right 0.3s ease-in-out;
-}
-
-#sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#sidebar li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-#sidebar li a {
-  color: #333;
-  text-decoration: none;
-}
-
-#sidebar li img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-#content {
-  margin-left: 320px; /* Deixar espaço para o menu */
-  padding: 20px;
-}
-
-  </style>
+        .curtidos {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
-    <nav id="sidebar">
-      <ul>
-        <li>
-          <a href="#">Seção 1</a>
-          <img src="imagem1.jpg" alt="Imagem 1">
-          <p>Texto da Seção 1</p>
-        </li>
-        <li>
-          <a href="#">Seção 2</a>
-          <img src="imagem2.jpg" alt="Imagem 2">
-          <p>Texto da Seção 2</p>
-        </li>
-        <li>
-          <a href="#">Seção 3</a>
-          <img src="imagem3.jpg" alt="Imagem 3">
-          <p>Texto da Seção 3</p>
-        </li>
-        <li>
-          <a href="#">Seção 4</a>
-          <img src="imagem4.jpg" alt="Imagem 4">
-          <p>Texto da Seção 4</p>
-        </li>
-        <li>
-          <a href="#">Seção 5</a>
-          <img src="imagem5.jpg" alt="Imagem 5">
-          <p>Texto da Seção 5</p>
-        </li>
-      </ul>
-    </nav>
-    <div id="content">
-      <!-- Conteúdo principal -->
+    <div id="home">
+        <img id="coracao" src="coração preto.png" onclick="curtir()" alt="Curtir">
     </div>
-  </div>
-  
-  <script>
-    function toggleMenu() {
-  var sidebar = document.getElementById("sidebar");
-  if (sidebar.style.right === "-300px") {
-    sidebar.style.right = "0";
-  } else {
-    sidebar.style.right = "-300px";
-  }
+
+    <div id="curtidos" class="curtidos">
+      <img src="/statics/Fotos/Alexandria/alexanpremium.png" alt="">
+        <ul id="itens-curtidos"></ul>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+    <script>
+
+let coracao = document.getElementById("coracao");
+let home = document.getElementById("home");
+let curtidos = document.getElementById("curtidos");
+let itensCurtidos = document.getElementById("itens-curtidos");
+
+let curtidas = 0;
+let itensCurtidosArray = [];
+
+function curtir() {
+    if (curtidas === 0) {
+        coracao.src = "coração vermelho.png";
+    } else {
+        coracao.src = "coração preto.png";
+    }
+    curtidas = 1 - curtidas; // Alternar entre 0 e 1
+
+    if (curtidas === 1) {
+        // Adicionar item curtido à lista
+        const novoItem = "Item Curtido " + (itensCurtidosArray.length + 1);
+        itensCurtidosArray.push(novoItem);
+        const novoElemento = document.createElement("li");
+        novoElemento.innerText = novoItem;
+        itensCurtidos.appendChild(novoElemento);
+    } else {
+        // Remover último item curtido da lista
+        itensCurtidosArray.pop();
+        itensCurtidos.removeChild(itensCurtidos.lastChild);
+    }
+
+    // Transição entre as telas
+    if (curtidas === 1) {
+        home.style.display = "none";
+        curtidos.style.display = "block";
+    } else {
+        home.style.display = "block";
+        curtidos.style.display = "none";
+    }
 }
 
-  </script>
+function voltar() {
+    home.style.display = "block";
+    curtidos.style.display = "none";
+}
+
+    </script>
 </body>
 </html>
