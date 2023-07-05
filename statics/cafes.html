@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encontros</title>
+  <link rel="stylesheet" href="cafes.css">
+
+</head>
+
+<body>
+
+<h1 class="titulo">Cafés</h1>
+<!-- imagens dos lugares -->
+
+<div class="premiados">
+    <a href="/statics/local.html">
+      <div class="image-container">
+        <img class="first-image" src="https://lh3.googleusercontent.com/p/AF1QipOuTj_G4KFHPRH0UeHwha3EG24Eyy2IPboyxdgQ=s680-w680-h510" alt="Primeira Imagem">
+        <img class="second-image" src="https://lh3.googleusercontent.com/p/AF1QipOf2TDtizF6b3BMLn-8hjOF23w379DTWQdV3tTj=s680-w680-h510" alt="Segunda Imagem">
+      </div>
+    </a>
+    <div class="image-container">
+      <img class="first-image" src="/statics/Fotos/Level Café/levelcafe.jpg" alt="Terceira Imagem">
+      <img class="second-image" src="/statics/Fotos/Level Café/level comida.png" alt="Quarta Imagem">
+    </div>
+
+    <div class="image-container">
+      <img class="first-image" src="https://lh3.googleusercontent.com/p/AF1QipMAnO7t5VTnN5z5x_tG4glMsIn7nfq9TGET4jXv=s680-w680-h510" alt="Quinta Imagem">
+      <img class="second-image" src="https://lh3.googleusercontent.com/p/AF1QipMyN_q--sXNK9OJ8mD8OVHg7JfAED4bJOa8thzW=s680-w680-h510" alt="Sexta Imagem">
+    </div>
+
+    <div class="image-container">
+      <img class="first-image" src="https://lh3.googleusercontent.com/p/AF1QipPgXOct9Z6VPTS6orLFMnLNJ_JMucrsrOyxMXu9=s680-w680-h510" alt="Sétima Imagem">
+      <img class="second-image" src="https://lh3.googleusercontent.com/p/AF1QipOD6H3DSf7xYVuQgIShc2dD4UG54qVB-7_BlWJ7=s680-w680-h510" alt="Oitava Imagem">
+    </div>
+    </div>
+    <div class="nomelugares">
+      <p class="nomelugar">Go Coffe</p>
+      <p class="nomelugar2">Level cafe</p>
+      <p class="nomelugar3">AP! Café Retrô</p>
+      <p class="nomelugar4">Secretto Café</p>
+    </div>
+    <!-- segunda camada de imagens -->
+    <div class="premiados2">
+
+    <a href="/statics/local.html">
+      <div class="image-container">
+        <img class="first-image" src="https://lh3.googleusercontent.com/p/AF1QipPpolXWI8JHD82OE3KpYKgk9QWENrXDgqIQgCFe=s680-w680-h510" alt="Primeira Imagem">
+        <img class="second-image" src="https://lh3.googleusercontent.com/p/AF1QipPl7EIWIYKnfK2D7x0SLopHuBCR5fYAbqnguV5d=s680-w680-h510" alt="Segunda Imagem">
+      </div>
+    </a>
+    <div class="image-container">
+      <img class="first-image" src="https://lh3.googleusercontent.com/p/AF1QipO2QJey6m-GWAfjlQ_saPkQfL_C-r7aqS35uvcs=s680-w680-h510" alt="Terceira Imagem">
+      <img class="second-image" src="https://lh3.googleusercontent.com/p/AF1QipOpECHgPGGUpv_sXEFfcdj8-BCZr5C27aVX-W4Y=s680-w680-h510" alt="Quarta Imagem">
+    </div>
+
+    <div class="image-container">
+      <img class="first-image" src="https://lh3.googleusercontent.com/p/AF1QipMT_y_6DVB4wZ6VsIGVHktXlYuzdirxjcIMaf0_=s680-w680-h510" alt="Quinta Imagem">
+      <img class="second-image" src="https://lh3.googleusercontent.com/p/AF1QipN6KZS6pcssBjAEkAyvYc-hW0VR7JKC-Qedl9Pe=s680-w680-h510" alt="Sexta Imagem">
+    </div>
+
+    <div class="image-container">
+      <img class="first-image" src="https://lh3.googleusercontent.com/p/AF1QipNn_WANxLBf7_BzfhiNEgoItM7GgdhR3lQxtwrP=s680-w680-h510 " alt="Sétima Imagem">
+      <img class="second-image" src="https://lh3.googleusercontent.com/p/AF1QipPip0XicXstLFBbg0yp3WbnmwC1L8ZRz4mDdRLL=s680-w680-h510" alt="Oitava Imagem">
+    </div>
+  </div>
+  <div class="nomelugares2">
+    <p class="nomelugar5">Café Marquês</p>
+    <p class="nomelugar6">Dona Francisca Delicatesse Café</p>
+    <p class="nomelugar7">Fiorello Café</p>
+    <p class="nomelugar8">Cheiro de Café By Don Edu</p>
+  </div>
+    <script>
+
+      const container1 = document.querySelector('.image-container');
+      const secondImage1 = container1.querySelector('.second-image');
+
+      container1.addEventListener('mouseenter', () => {
+        secondImage1.style.transform = 'translateX(0)';
+      });
+
+      container1.addEventListener('mouseleave', () => {
+        secondImage1.style.transform = 'translateX(100%)';
+      });
+      container2.addEventListener('mouseenter', () => {
+        secondImage2.style.transform = 'translateX(0)';
+      });
+
+      container2.addEventListener('mouseleave', () => {
+        secondImage2.style.transform = 'translateX(100%)';
+      });
+    </script>
+  </div>
+  
+ 
+
+
+</body>
+
+</html>
