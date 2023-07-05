@@ -26,6 +26,10 @@
   margin-left: 1%;
 }
 
+.first-image {
+  object-fit: cover;
+}
+
 .image-container img {
   position: absolute;
   width: 100%;
