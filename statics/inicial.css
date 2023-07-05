@@ -164,8 +164,6 @@ input {
 
 /* Botôes de categorias */
 
-
-
 .botoes {
   display: flex;
   margin-top: 30px;
@@ -368,6 +366,26 @@ input {
 
 .melhores {
   width: 90%;
+}
+
+.aviso {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: left;
+  z-index: 9999; /* Valor alto para garantir que fique no topo */
+  display: flex;
+}
+
+#btnProsseguir {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .melhorestitulos {
@@ -701,6 +719,7 @@ body {
   display: flex;
   gap: 50px;
   padding: 20px;
+  padding-left: 100px;
 }
 
 #links {

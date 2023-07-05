@@ -115,6 +115,26 @@
     <br>
   </div>
 
+  <div id="aviso" class="aviso">
+    <p>Olá! Desejamos oferecer a melhor experiência em nossos serviços. Por isso, utilizamos cookies e tecnologias
+        similares para aprimorar sua visita, personalizar anúncios e recomendar conteúdos relevantes. Ao utilizar
+        nossos serviços, você está ciente dessa funcionalidade e concorda com nossa Política de Privacidade.</p>
+    <button id="btnProsseguir">Prosseguir</button>
+</div>
+
+<script>
+// Obtém o elemento do botão de prosseguir
+var btnProsseguir = document.getElementById("btnProsseguir");
+
+// Obtém o elemento do aviso
+var aviso = document.getElementById("aviso");
+
+// Função para ocultar o aviso quando o botão de prosseguir é clicado
+btnProsseguir.addEventListener("click", function() {
+aviso.style.display = "none";
+});
+</script>
+
   <!-- Titulo 1 -->
   <div class="melhores">
     <p class="melhorestitulos">De pessoas para pessoas, os lugares <br><span style="color: #F2B203;"> mais
@@ -260,6 +280,8 @@
         <a class="paginacab" href="sobrenos.html"><ol>Sobre nós</ol></a>
         <a class="paginacab" href="contato.html"><ol>Contato</ol></a>
         <a class="paginacab" href="https://www.instagram.com/"><ol>Redes Sociais</ol></a>
+        <a class="paginacab" href="termosdeuso.html"><ol>Termos de Uso</ol></a>
+        <a class="paginacab" href="politicasdeprivacidade.html"><ol>Política de Privacidade</ol></a>
         
       </ul>
     </div>
