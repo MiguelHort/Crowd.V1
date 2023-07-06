@@ -25,12 +25,14 @@ p {
     width: 30%;
     gap: 10px;
 }
+
 #coluna2 {
     display: flex;
     flex-direction: column;
     width: 30%;
     gap: 10px;
 }
+
 #coluna2 {
     display: flex;
     flex-direction: column;

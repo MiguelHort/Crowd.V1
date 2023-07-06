@@ -376,7 +376,8 @@ input {
   padding: 20px;
   background-color: #f8f8f8;
   text-align: left;
-  z-index: 9999; /* Valor alto para garantir que fique no topo */
+  z-index: 9999;
+  /* Valor alto para garantir que fique no topo */
   display: flex;
 }
 
@@ -456,6 +457,7 @@ input {
   justify-content: center;
   width: 90%;
 }
+
 .texto-sublinhado {
   text-decoration: none;
   transition: text-decoration 0.3s;
@@ -473,6 +475,7 @@ input {
   transition: text-decoration 0.3s;
   cursor: pointer;
 }
+
 .nomelugar:hover {
   text-decoration: underline;
 }
@@ -486,6 +489,7 @@ input {
   cursor: pointer;
 
 }
+
 .nomelugar2:hover {
   text-decoration: underline;
 }
@@ -498,6 +502,7 @@ input {
   cursor: pointer;
   transition: text-decoration 0.3s;
 }
+
 .nomelugar3:hover {
   text-decoration: underline;
 }
@@ -510,8 +515,9 @@ input {
   transition: text-decoration 0.3s;
   cursor: pointer;
 }
+
 .nomelugar4:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .melhoresimagens {

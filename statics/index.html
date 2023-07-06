@@ -60,6 +60,7 @@
           var popup = document.getElementById("popup");
           var isVisible = false;
 
+          // Função para alternar a visibilidade do popup
           function alternarPopup() {
             isVisible = !isVisible;
             if (isVisible) {
@@ -69,10 +70,12 @@
             }
           }
 
+          // Evento de scroll da janela para esconder o popup
           window.addEventListener("scroll", function () {
             popup.classList.add("hidden");
             isVisible = false;
           });
+
 
     // coração e login
         </script>
@@ -85,7 +88,7 @@
     <!-- Botões de categorias -->
 
     <div class="botoes">
-      <button class="botao1"> 
+      <button class="botao1">
         <p class="textobotao1">Em alta</p><img class="fogoicon" src="/statics/fogo_preto.png"></img>
       </button>
       <button class="botao2">
@@ -117,23 +120,23 @@
 
   <div id="aviso" class="aviso">
     <p>Olá! Desejamos oferecer a melhor experiência em nossos serviços. Por isso, utilizamos cookies e tecnologias
-        similares para aprimorar sua visita, personalizar anúncios e recomendar conteúdos relevantes. Ao utilizar
-        nossos serviços, você está ciente dessa funcionalidade e concorda com nossa Política de Privacidade.</p>
+      similares para aprimorar sua visita, personalizar anúncios e recomendar conteúdos relevantes. Ao utilizar
+      nossos serviços, você está ciente dessa funcionalidade e concorda com nossa Política de Privacidade.</p>
     <button id="btnProsseguir">Prosseguir</button>
-</div>
+  </div>
 
-<script>
-// Obtém o elemento do botão de prosseguir
-var btnProsseguir = document.getElementById("btnProsseguir");
+  <script>
+    // Obtém o elemento do botão de prosseguir
+    var btnProsseguir = document.getElementById("btnProsseguir");
 
-// Obtém o elemento do aviso
-var aviso = document.getElementById("aviso");
+    // Obtém o elemento do aviso
+    var aviso = document.getElementById("aviso");
 
-// Função para ocultar o aviso quando o botão de prosseguir é clicado
-btnProsseguir.addEventListener("click", function() {
-aviso.style.display = "none";
-});
-</script>
+    // Função para ocultar o aviso quando o botão de prosseguir é clicado
+    btnProsseguir.addEventListener("click", function () {
+      aviso.style.display = "none";
+    });
+  </script>
 
   <!-- Titulo 1 -->
   <div class="melhores">
@@ -169,23 +172,33 @@ aviso.style.display = "none";
       const container1 = document.querySelector('.image-container');
       const secondImage1 = container1.querySelector('.second-image');
 
+      // Evento de mouse para mostrar a segunda imagem ao passar o mouse sobre o container1
       container1.addEventListener('mouseenter', () => {
         secondImage1.style.transform = 'translateX(0)';
       });
 
+      // Evento de mouse para ocultar a segunda imagem ao retirar o mouse do container1
       container1.addEventListener('mouseleave', () => {
         secondImage1.style.transform = 'translateX(100%)';
       });
+
+      const container2 = document.querySelector('.image-container');
+      const secondImage2 = container2.querySelector('.second-image');
+
+      // Evento de mouse para mostrar a segunda imagem ao passar o mouse sobre o container2
       container2.addEventListener('mouseenter', () => {
         secondImage2.style.transform = 'translateX(0)';
       });
 
+      // Evento de mouse para ocultar a segunda imagem ao retirar o mouse do container2
       container2.addEventListener('mouseleave', () => {
         secondImage2.style.transform = 'translateX(100%)';
       });
+
     </script>
   </div>
-  
+
+  <!-- Nomes dos locais -->
   <div class="nomelugares">
     <p class="nomelugar">Alexandria Burguer</p>
     <p class="nomelugar2">Unalome</p>
@@ -193,7 +206,7 @@ aviso.style.display = "none";
     <p class="nomelugar4">Level Café</p>
   </div>
 
-
+  <!-- Slide de cadastro de local -->
   <div class="slide">
     <div class="slidetexto">
       <p class="Ajudeadar">Ajude a dar mais visibilidade<br>para pequenos negócios.</p>
@@ -241,48 +254,58 @@ aviso.style.display = "none";
           <p class="card__category">Em busca da qualidade de<br> vida</p>
         </div>
       </a>
-        <a class="card" href="#">
-          <div class="card__background"
-            style="background-image: url(https://img.freepik.com/fotos-gratis/jovem-beija-seu-homem-lindo-enquanto-jantar-romantico_171337-19116.jpg?w=360&t=st=1686572101~exp=1686572701~hmac=0f05366d1d2d746a1bc35db87ff0925386a289292566d1721108ccf67a781bdc   )">
-          </div>
-          <div class="card__content">
-            <h3 class="card__heading">Encontros</h3>
-            <p class="card__category">O amor está no ar!</p>
-          </div>
-        </a>
-        <a class="card" href="#">
-          <div class="card__background"
-            style="background-image: url(https://img.freepik.com/fotos-gratis/vapores-de-cafe-fresco-na-mesa-de-madeira-fecham-a-ia-generativa_188544-8923.jpg?w=996&t=st=1688213414~exp=1688214014~hmac=70da40012676b3fa38fcd2435a0b06fcbcd7d4ceff73c3300cfccd394ad532f7)">
-          </div>
-          <div class="card__content">
-            <h3 class="card__heading">Cafés</h3>
-            <p class="card__category">Aquele café quentinho</p>
-          </div>
-        </a>
-        <a class="card" href="#">
-          <div class="card__background"
-            style="background-image: url(https://img.freepik.com/fotos-gratis/bela-praia-tropical-mar-e-mar-com-palmeira-de-coco-na-hora-do-nascer-do-sol_74190-7454.jpg?w=826&t=st=1688213542~exp=1688214142~hmac=a712a5718216bd22b1f87606d3a42157d9ede813ce745a0a8fa05a1f2cac02c6)">
-          </div>
-          <div class="card__content">
-            <h3 class="card__heading">Praias</h3>
-            <p class="card__category">Vamos a la playa</p>
-          </div>
-        </a>
+      <a class="card" href="#">
+        <div class="card__background"
+          style="background-image: url(https://img.freepik.com/fotos-gratis/jovem-beija-seu-homem-lindo-enquanto-jantar-romantico_171337-19116.jpg?w=360&t=st=1686572101~exp=1686572701~hmac=0f05366d1d2d746a1bc35db87ff0925386a289292566d1721108ccf67a781bdc   )">
+        </div>
+        <div class="card__content">
+          <h3 class="card__heading">Encontros</h3>
+          <p class="card__category">O amor está no ar!</p>
+        </div>
+      </a>
+      <a class="card" href="cafes.html">
+        <div class="card__background"
+          style="background-image: url(https://img.freepik.com/fotos-gratis/vapores-de-cafe-fresco-na-mesa-de-madeira-fecham-a-ia-generativa_188544-8923.jpg?w=996&t=st=1688213414~exp=1688214014~hmac=70da40012676b3fa38fcd2435a0b06fcbcd7d4ceff73c3300cfccd394ad532f7)">
+        </div>
+        <div class="card__content">
+          <h3 class="card__heading">Cafés</h3>
+          <p class="card__category">Aquele café quentinho</p>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background"
+          style="background-image: url(https://img.freepik.com/fotos-gratis/bela-praia-tropical-mar-e-mar-com-palmeira-de-coco-na-hora-do-nascer-do-sol_74190-7454.jpg?w=826&t=st=1688213542~exp=1688214142~hmac=a712a5718216bd22b1f87606d3a42157d9ede813ce745a0a8fa05a1f2cac02c6)">
+        </div>
+        <div class="card__content">
+          <h3 class="card__heading">Praias</h3>
+          <p class="card__category">Vamos a la playa</p>
+        </div>
+      </a>
   </section>
 
 
 
-
+  <!-- Rodapé -->
   <footer id="rodape">
     <div id="divesquerda">
       <ul id="rodapelista">
         <h3 id="links">Links</h3>
-        <a class="paginacab" href="sobrenos.html"><ol>Sobre nós</ol></a>
-        <a class="paginacab" href="contato.html"><ol>Contato</ol></a>
-        <a class="paginacab" href="https://www.instagram.com/"><ol>Redes Sociais</ol></a>
-        <a class="paginacab" href="termosdeuso.html"><ol>Termos de Uso</ol></a>
-        <a class="paginacab" href="politicasdeprivacidade.html"><ol>Política de Privacidade</ol></a>
-        
+        <a class="paginacab" href="sobrenos.html">
+          <ol>Sobre nós</ol>
+        </a>
+        <a class="paginacab" href="contato.html">
+          <ol>Contato</ol>
+        </a>
+        <a class="paginacab" href="https://www.instagram.com/">
+          <ol>Redes Sociais</ol>
+        </a>
+        <a class="paginacab" href="termosdeuso.html">
+          <ol>Termos de Uso</ol>
+        </a>
+        <a class="paginacab" href="politicasdeprivacidade.html">
+          <ol>Política de Privacidade</ol>
+        </a>
+
       </ul>
     </div>
     <div id="divdireita">

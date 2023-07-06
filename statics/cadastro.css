@@ -1,12 +1,11 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /*  */
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*  */
+}
 
-body{
+body {
   background-color: black;
   display: flex;
   margin-top: 150px;
@@ -17,159 +16,160 @@ body{
   src: url('exo-extrabold-italic.ttf') format(truetype);
 }
 
-.escrita{
+.escrita {
   margin: auto;
   font-weight: bold;
   font-family: extrabolditalic;
   font-size: 40px;
   color: white;
 }
-  .container {
-    width: 400px;
-    height: 500px;
-    margin: auto;
-    margin-left: 0px;
-    background-color: #333333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font-family: Arial, sans-serif;
-    margin-top: -5%;
-  }
 
-  .logo {
-    width: 100%;
-    height: 100px;
-    background: grey;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .logo img {
-    width: 80px;
-    height: 80px;
-  }
-
-form{
-    background-color: #333333;
+.container {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  margin-left: 0px;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin-top: -5%;
 }
 
-  .form1 {
-    width: 80%;
-    margin: 50px auto;
-    background-color: #333333;
-  }
+.logo {
+  width: 100%;
+  height: 100px;
+  background: grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .form-group {
-    margin-bottom: 20px;
-  }
+.logo img {
+  width: 80px;
+  height: 80px;
+}
 
-  .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+form {
+  background-color: #333333;
+}
 
-  .form-group input {
-    width: 100%;
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding-left: 10px;
-  }
+.form1 {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #333333;
+}
 
-  .form-group input:focus {
-    outline: none;
-    border-color: #66aaff;
-  }
+.form-group {
+  margin-bottom: 20px;
+}
 
-  .button {
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    background-color: #FBBC05;
-    color: white;
-    font-weight: bold;
-  }
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-  .button:hover {
-    cursor: pointer;
-    background-color: #ce9a00;
-  }
+.form-group input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+}
 
-  .button:focus {
-    outline: none;
-  }
+.form-group input:focus {
+  outline: none;
+  border-color: #66aaff;
+}
 
-  .google-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: white;
-    color: #333333;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-  }
+.button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FBBC05;
+  color: white;
+  font-weight: bold;
+}
 
-  .google-button img {
-      width :30 px ;
-      height :30 px ;
-      margin-left :10 px ;
-      margin-right :10 px ;
-   }
-  
-   .google-button:hover {
-     cursor : pointer ;
-     box-shadow :0 0 5 px rgba (0 ,0 ,0 ,0.1) ;
-   }
-  
-   .google-button:focus {
-     outline : none ;
-   }
-  
-   .link {
-     display : block ;
-     text-align : center ;
-     color : #FBBC05 ;
-     text-decoration : none ;
-     margin-top: 20px;
-   }
-  
-   .link:hover {
-     text-decoration : underline ;
-   }
+.button:hover {
+  cursor: pointer;
+  background-color: #ce9a00;
+}
 
-   label {
-       color: white;
-   }
+.button:focus {
+  outline: none;
+}
 
-   .social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .social p {
-    margin-right: 10px;
-    color: white;
-  }
-  
-  .social img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .social img:hover {
-    opacity: 0.8;
-  }
+.google-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  color: #333333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
 
-  #image {
-    color: white;
-  }
+.google-button img {
+  width: 30 px;
+  height: 30 px;
+  margin-left: 10 px;
+  margin-right: 10 px;
+}
+
+.google-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5 px rgba (0, 0, 0, 0.1);
+}
+
+.google-button:focus {
+  outline: none;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  color: #FBBC05;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+label {
+  color: white;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social p {
+  margin-right: 10px;
+  color: white;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social img:hover {
+  opacity: 0.8;
+}
+
+#image {
+  color: white;
+}

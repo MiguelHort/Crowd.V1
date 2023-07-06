@@ -1,18 +1,21 @@
-.titulo{
+.titulo {
   margin-left: 6%;
   font-size: 40px;
 }
+
 .premiados {
   display: flex;
   width: 90%;
-  gap: 40px;
+  gap: 30px;
+  justify-content: center;
 
 }
+
 .premiados2 {
   display: flex;
   width: 90%;
-  gap: 40px;
-  
+  gap: 30px;
+  justify-content: center;
 }
 
 /* imagens com animação */
@@ -57,14 +60,12 @@
 /* legenda das imagens */
 .nomelugares {
   display: flex;
-  gap: 240px;
+  gap: 40px;
   font-size: 20px;
-  margin:auto;
-  margin-left: 7%;
-  /* width: 90%; */
-
-
+  margin: auto;
+  width: 90%;
 }
+
 .texto-sublinhado {
   text-decoration: none;
   transition: text-decoration 0.3s;
@@ -75,98 +76,14 @@
 }
 
 .nomelugar {
-  color: #000;
+  color: black;
   margin-top: 1%;
-  text-decoration: none;
-  transition: text-decoration 0.3s;
   cursor: pointer;
+  width: 270px;
+  display: flex;
+  justify-content: center;
 }
+
 .nomelugar:hover {
   text-decoration: underline;
-}
-
-.nomelugar2 {
-  color: #000;
-  margin-top: 1%;
-  text-decoration: none;
-  transition: text-decoration 0.3s;
-  cursor: pointer;
-
-}
-.nomelugar2:hover {
-  text-decoration: underline;
-}
-
-.nomelugar3 {
-  color: #000;
-  margin-top: 1%;
-  text-decoration: none;
-  cursor: pointer;
-  transition: text-decoration 0.3s;
-}
-.nomelugar3:hover {
-  text-decoration: underline;
-}
-
-.nomelugar4 {
-  color: #000;
-  margin-top: 1%;
-  margin-right: 15%;
-  text-decoration: none;
-  transition: text-decoration 0.3s;
-  cursor: pointer;
-}
-.nomelugar4:hover {
-  text-decoration: underline; 
-}
-
-.nomelugares2 {
-  display: flex;
-  gap: 40px;
-  font-size: 20px;
-  margin:auto;
-  width: 90%;
-}
-.nomelugar5 {
-  color: #000;
-  margin-top: 1%;
-  transition: text-decoration 0.3s;
-  cursor: pointer;
-}
-.nomelugar5:hover {
-  text-decoration: underline;
-}
-
-.nomelugar6 {
-  color: #000;
-  margin-top: 1%;
-  text-decoration: none;
-  transition: text-decoration 0.3s;
-  cursor: pointer;
-}
-.nomelugar6:hover {
-  text-decoration: underline;
-}
-
-.nomelugar7 {
-  color: #000;
-  margin-top: 1%;
-  text-decoration: none;
-  cursor: pointer;
-  transition: text-decoration 0.3s;
-
-}
-.nomelugar7:hover {
-  text-decoration: underline;
-}
-
-.nomelugar8 {
-  color: #000;
-  margin-top: 1%;
-  text-decoration: none;
-  transition: text-decoration 0.3s;
-  cursor: pointer;
-}
-.nomelugar8:hover {
-  text-decoration: underline; 
 }

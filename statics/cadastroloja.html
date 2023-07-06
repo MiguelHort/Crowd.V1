@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -14,6 +14,7 @@
 
   <header>
 
+    <!-- Logo site -->
     <div class="logocompleto">
       <img class="imagemlogo" src="/statics/logosite1.png">
       <p class="logo">Crowd</p>
@@ -36,10 +37,12 @@
   </header>
 
 
-
+  <!-- Titulos principais -->
   <h1 class="titulo">O seu negócio e a <br> Crowd juntos!</h1>
 
   <p class="conteudo">Preencha as informações com <br> tudo que você quer que saibam <br> sobre o seu negócio.</p>
+
+  <!-- Formulario para pegar as informações do local -->
   <form action="cadastroloja.php" method="POST">
 
     <div class="pai">
@@ -64,18 +67,19 @@
         <input class="email" type="email" name="email" required>
 
         <p class="seusite">Seu site</p>
-        <input class="site" type="url" name="site" placeholder="https://examplo.com.br" >
+        <input class="site" type="url" name="site" placeholder="https://examplo.com.br">
 
       </div>
 
+      <!-- Adicionar imagens -->
       <div class="addimagem">
-      <p class="adicione">Adicione as melhores fotos do seu negócio</p>
-      <input type="file" name="picture__input" id="picture__input" multiple>
-      <label class="picture" for="picture__input" tabIndex="0">
-        <span class="picture__image"></span>
-      </label>
-      
-    </div>
+        <p class="adicione">Adicione as melhores fotos do seu negócio</p>
+        <input type="file" name="picture__input" id="picture__input" multiple>
+        <label class="picture" for="picture__input" tabIndex="0">
+          <span class="picture__image"></span>
+        </label>
+
+      </div>
     </div>
 
     <button type="submit" name="submit" class="enviar">Cadastrar</button>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Botão de Curtir</title>
     <style>
@@ -14,68 +15,71 @@
         }
     </style>
 </head>
+
 <body>
     <div id="home">
         <img id="coracao" src="coração preto.png" onclick="curtir()" alt="Curtir">
     </div>
 
     <div id="curtidos" class="curtidos">
-      <img src="/statics/Fotos/Alexandria/alexanpremium.png" alt="">
+        <img src="/statics/Fotos/Alexandria/alexanpremium.png" alt="">
         <ul id="itens-curtidos"></ul>
         <button onclick="voltar()">Voltar</button>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
 
 
-    <script>
+<script>
 
-let coracao = document.getElementById("coracao");
-let home = document.getElementById("home");
-let curtidos = document.getElementById("curtidos");
-let itensCurtidos = document.getElementById("itens-curtidos");
+    let coracao = document.getElementById("coracao");
+    let home = document.getElementById("home");
+    let curtidos = document.getElementById("curtidos");
+    let itensCurtidos = document.getElementById("itens-curtidos");
 
-let curtidas = 0;
-let itensCurtidosArray = [];
+    let curtidas = 0;
+    let itensCurtidosArray = [];
 
-function curtir() {
-    if (curtidas === 0) {
-        coracao.src = "coração vermelho.png";
-    } else {
-        coracao.src = "coração preto.png";
+    function curtir() {
+        if (curtidas === 0) {
+            coracao.src = "coração vermelho.png";
+        } else {
+            coracao.src = "coração preto.png";
+        }
+        curtidas = 1 - curtidas; // Alternar entre 0 e 1
+
+        if (curtidas === 1) {
+            // Adicionar item curtido à lista
+            const novoItem = "Item Curtido " + (itensCurtidosArray.length + 1);
+            itensCurtidosArray.push(novoItem);
+            const novoElemento = document.createElement("li");
+            novoElemento.innerText = novoItem;
+            itensCurtidos.appendChild(novoElemento);
+        } else {
+            // Remover último item curtido da lista
+            itensCurtidosArray.pop();
+            itensCurtidos.removeChild(itensCurtidos.lastChild);
+        }
+
+        // Transição entre as telas
+        if (curtidas === 1) {
+            home.style.display = "none";
+            curtidos.style.display = "block";
+        } else {
+            home.style.display = "block";
+            curtidos.style.display = "none";
+        }
     }
-    curtidas = 1 - curtidas; // Alternar entre 0 e 1
 
-    if (curtidas === 1) {
-        // Adicionar item curtido à lista
-        const novoItem = "Item Curtido " + (itensCurtidosArray.length + 1);
-        itensCurtidosArray.push(novoItem);
-        const novoElemento = document.createElement("li");
-        novoElemento.innerText = novoItem;
-        itensCurtidos.appendChild(novoElemento);
-    } else {
-        // Remover último item curtido da lista
-        itensCurtidosArray.pop();
-        itensCurtidos.removeChild(itensCurtidos.lastChild);
-    }
-
-    // Transição entre as telas
-    if (curtidas === 1) {
-        home.style.display = "none";
-        curtidos.style.display = "block";
-    } else {
+    function voltar() {
         home.style.display = "block";
         curtidos.style.display = "none";
     }
-}
 
-function voltar() {
-    home.style.display = "block";
-    curtidos.style.display = "none";
-}
-
-    </script>
+</script>
 </body>
+
 </html>
